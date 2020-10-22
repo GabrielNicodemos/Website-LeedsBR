@@ -10,12 +10,6 @@ a {
   color: white;
 }
 
-a:hover {
-  font-weight: bold;
-}
-
-
-
 .container {
   height: 100px;
   width: 80%;
@@ -23,10 +17,10 @@ a:hover {
 }
 /* FIM ESTILOS GERAIS */
 
-/* Intro */
+/* Intro e menu */
 .intro{
   width: 100%;
-  height: 370px;
+  height: 610px;
   position: relative; 
 }
 .intro img {
@@ -34,32 +28,107 @@ a:hover {
   background-size: cover;
   width:100%;
    height: 100%;
-  border-top: 8px solid #2E4386;  
-  border-bottom: 8px solid #CAAC00;
   position: relative;
   
+}
+.img-intro{
+  border-top: 8px solid #2E4386;  
+  border-bottom: 8px solid #CAAC00;
 }
 
 .login {
   position: absolute;
-   left: 80%;
-    top: 100%;
+   left: 42%;
+    top: 7%;
     margin-top: -35px;
     background-color: #2E4386; 
     width:200px;
     height: 40px; 
     color: #FFF;
-    border-radius: 20px;
+    border-radius: 0 0 30px 30px  ;
     
 }
 .login ul  {
 text-align: justify;
 margin-top: 11px;
-margin-left: 5px;
+margin-left: -2px;
 }
 .login ul li {
   display: inline;
-  margin-right: 10px;
-  
+  margin-right: 20px;
 }
 
+.login ul li:hover{
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.menu {
+  position: absolute;
+   left: 35%;
+    top: 100%;
+    margin-top: -35px;
+    background-color: #2E4386; 
+    width:400px;
+    height: 40px; 
+    color: #FFF;
+    border-radius: 20px;
+    opacity: 90%;
+    
+}
+.menu ul  {
+text-align: justify;
+margin-top: 11px;
+margin-left: 35px;
+}
+.menu ul li {
+  display: inline;
+  margin-right: 10px; 
+}
+
+.menu ul li:hover{
+   cursor: pointer;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.logo {
+  position: absolute;
+   left: 42%;
+    top: 77%;
+    margin-top: -35px;
+    width:200px;
+    height: 150px; 
+    color: #FFF;
+    border-radius: 20px;
+    opacity: 90%; 
+}
+
+/* FIM Intro e menu */
+
+.noticias{
+  width: 100%;
+  height: 250px;
+  background-color: #ccc;
+  margin-top: 50px;
+  border-top: 8px solid #2E4386;
+  position: relative; 
+}
+
+.tag {
+  position: absolute;
+   left: 1%;
+    top: 12%;
+    margin-top: -35px;
+    background-color: #2E4386; 
+    width:150px;
+    height: 30px; 
+    color: #FFF;
+    border-radius: 20px;
+    opacity: 98%;
+}
+
+.tag p{
+  color: #fff;
+
+}
