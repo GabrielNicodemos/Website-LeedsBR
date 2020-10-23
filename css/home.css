@@ -118,17 +118,45 @@ margin-left: 35px;
 .tag {
   position: absolute;
    left: 1%;
-    top: 12%;
+    top: -1%;
     margin-top: -35px;
     background-color: #2E4386; 
     width:150px;
     height: 30px; 
     color: #FFF;
-    border-radius: 20px;
+    border-radius: 0px 10px 0 10px;
     opacity: 98%;
 }
 
 .tag p{
   color: #fff;
+  text-align: center;
+  margin-top: 8px;
 
+}
+
+.noticia1{
+  width: 400px;
+  height: 250px;
+  background-color: green;
+  position: absolute;
+  display: inline;
+  left:30%;
+  
+}
+.noticia2{
+  width: 200px;
+  height: 250px;
+  background-color: yellow;
+  margin-top: 50px;
+  position: absolute;
+  display: inline;
+}
+.noticia3{
+  width: 400px;
+  height: 250px;
+  background-color: red;
+  display: inline;
+  position: absolute;
+  top: 0;
 }
