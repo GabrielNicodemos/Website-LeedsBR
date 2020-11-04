@@ -14,9 +14,9 @@
     <div>
       <div class="intro">
         <img class="img-intro" src="introLeeds.jpg">
-              <div class="login">
+              <div class="login" id="login_cadastro" style="display: block;">
                 <ul>
-                    <a><li>Login</li></a>
+                    <a><li onclick="login()">Login</li></a>
                     <a><li>Cadastro</li></a>
                 </ul>
           </div>
@@ -33,14 +33,14 @@
           </div>
       </div>  
       
-            <div class=login-block>
+            <div id=login_block>
               <h3>Login</h3>
               <p>Email:</p><br>
               <input type="text">
               <p>Senha:</p><br>
-              <input type="password">
+              <input type="password"><br>
               <button>Entrar</button>
-              <button>Voltar</button>
+              <button onclick="fechar_login()">Fechar</button>
             </div>
     </div>
     
@@ -113,3 +113,15 @@
         
 </body>
 </html>
+
+<script>
+  function login(){
+    login_block.style.display = 'block';
+    login_cadastro.style.display ='none';
+  }
+  function fechar_login(){
+    login_block.style.display = 'none';
+    login_cadastro.style.display ='block';
+   
+  }
+</script>
