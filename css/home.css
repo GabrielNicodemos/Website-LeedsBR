@@ -69,9 +69,17 @@ a {
   display: none;
 }
 
-#login_block p, h3{
+#login_block p{
   color: white;
   text-align: center;
+}
+
+
+#login_block h3{
+  color: white;
+  text-align: center;
+  margin-left: 30px;
+ 
 }
 
 #login_block input{
@@ -107,10 +115,14 @@ a {
   color: #2E4386;
   cursor: pointer;
 }
-
-
-
-
+.btnSair{
+  width: 15px;
+  height: 15px;
+  float: right;
+  margin-top: 22px;
+  margin-right: 20px;
+  cursor: pointer;
+}
 .login ul  {
 text-align: justify;
 margin-top: 11px;
@@ -193,6 +205,9 @@ margin-left: 35px;
  left: 50%;
  transform: translateX(-50%);
 }
+.tag2{
+  top: -7%;
+}
 
 
 .img-not{
@@ -220,6 +235,7 @@ margin-left: 35px;
   width: 100px;
   height: 20px;
   border: 1px solid white;
+  outline: none;
 }
 
 .botao:hover{
