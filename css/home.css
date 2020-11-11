@@ -64,7 +64,67 @@ a {
   transform: translateX(-50%);
   width:300px;
   height: 300px;
-  background-color:  #2e4286c0;
+  background-color:  #2E4386;
+  z-index: 0;
+  border-radius: 20px;
+  display: none;
+}
+#cadastro_block p{
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+#cadastro_block h3{
+  color: white;
+  text-align: center;
+  margin-left: 30px;
+}
+
+#cadastro_block input{
+  position: absolute;
+  background: none;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  margin-top: -15px;
+  width: 200px;
+  padding: 5px;
+
+}
+
+#cadastro_block button{
+  position: relative;
+  background: none;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: none;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  display: block;
+  width: 120px;
+  top: 5%;
+}
+
+#cadastro_block button:hover{
+  background-color: white;
+  color: #2E4386;
+  cursor: pointer;
+}
+
+#cadastro_block{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width:400px;
+  height: 500px;
+  background-color:   #2E4386;
   z-index: 0;
   border-radius: 20px;
   display: none;
@@ -80,7 +140,6 @@ a {
   color: white;
   text-align: center;
   margin-left: 30px;
- 
 }
 
 #login_block input{
@@ -93,7 +152,6 @@ a {
   text-align: center;
   color: white;
   margin-top: -20px;
-
 }
 
 #login_block button{
@@ -293,7 +351,7 @@ margin-left: 35px;
   position: absolute;
   width: 100%;
   height:380px;
-  top: 180%;
+  top: 190%;
   border-top: 8px solid #CAAC00 ;
 }
 
@@ -311,7 +369,7 @@ margin-left: 35px;
   position: absolute;
   width: 100%;
   height:480px;
-  top: 250%;
+  top: 270%;
   background-color:#2E4386 ;
   border-top: 8px solid #CAAC00 ;
 }
@@ -373,7 +431,7 @@ textarea{
   width: 100%;
   position: absolute;
   background-color: #212f5f;
-  top: 322%;
+  top: 357%;
   height: 120px;
 }
 
@@ -396,6 +454,20 @@ textarea{
   float: left;
 }
 
+.img-social{
+  height: 35px;
+  width: 35px;
+  margin-top: 15px;
+  margin-left: 10px;
+  
+}
+
+.img-social:hover{
+  height: 40px;
+  width: 40px;
+   cursor: pointer;
+   border-bottom: 1px solid #fff;
+}
 .endereco{
   line-height: 25px;
   position: absolute;
@@ -407,9 +479,10 @@ textarea{
   width: 100%;
   position: absolute;
   background-color: #212f5f;
-  top: 340%;
+  top: 375%;
   height: 50px;
   border-top: 2px solid white;
   text-align: center;
   color: white;
 }
+

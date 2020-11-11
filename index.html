@@ -17,7 +17,7 @@
               <div class="login" id="login_cadastro" style="display: block;">
                 <ul>
                     <a><li onclick="login()">Login</li></a>
-                    <a><li>Cadastro</li></a>
+                    <a><li onclick="cadastro()">Cadastro</li></a>
                 </ul>
           </div>
           <div class="menu">
@@ -45,6 +45,29 @@
               <div id=mensagemLogin><p></p></div>
             </div>
     </div>
+
+    <div id=cadastro_block>
+      <img src="fechar.png" class="btnSair" onclick="fechar_cadastro()">
+      <h3>Cadastro</h3>
+      <p>Nome:</p>
+      <input type="text"placeholder="Ex: Gabriel">
+      <p>Sobrenome:</p>
+      <input type="text" placeholder="Ex: Silva">
+      <p>Email:</p>
+      <input type="email" placeholder="Ex: Gabriel@bandtec.com">
+      <p>Confirme seu email:</p>
+      <input type="email" placeholder="Ex: Gabriel@bandtec.com">
+      <p>senha:</p>
+      <input type="password" >
+      <p>confirme sua senha:</p>
+      <input type="password" >
+      <button onclick="verificaLogin()">Cadastrar</button>
+      <button onclick="fechar_login()">Limpar</button>
+      <div id=mensagemCadastro><p></p></div>
+    </div>
+</div>
+
+    
     
   </header>
     <!-- FIM Menu e Introdução -->
@@ -78,14 +101,16 @@
     </section>
         <!-- FIM section notícia -->
 
-
+<!-- section jogos -->
         <section class="jogos">
           
           <img src="estadio.jpg" class="img-jg">
           <div class="tag"> 
              <p>match day</p>
           </div>
-              
+  <!-- FIM section jogos -->
+  
+  <!-- section formulario -->
          </section>
          <section class="form"> 
                <div class="tag tag2"> 
@@ -109,11 +134,13 @@
                                                      <button class="btn-form">Enviar mensagem</button>
                     </div>
                    </div> 
-                  
          </section>
+<!-- Fim section formulario -->
 
-         <section class="footer">
-           <div class="container">
+
+<!-- footer -->
+<section class="footer">
+        <div class="container">
              <div class="contato">
                <ul>
                  <li>+55 (11)4444-5555</li>
@@ -132,25 +159,32 @@
              
              <div class="sociais">
                <ul>
-                  <li>Whatssap</li>
-                  <li>Twiter</li>
-                  <li>Facebook</li>
+                  <li><a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" class="img-social"></a></li>
+                  <li><a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" class="img-social"></a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank"><img src="instagram.png" class="img-social"></a></li>
                </ul>
              </div>
 
              
              </div>
-         </section>
+            </section>
 
          <div class="copy">
           <p>Gabriel Eduardo - Student BandTec - Projeto Individual - 2020</p>
         </div>
+  <!-- Fim footer -->
+
 
         
 </body>
 </html>
 
 <script>
+
+  function cadastro(){
+    cadastro_block.style.display = 'block';
+    login_cadastro.style.display ='none';
+  }
   function login(){
     login_block.style.display = 'block';
     login_cadastro.style.display ='none';
@@ -160,6 +194,16 @@
   }
   function fechar_login(){
     login_block.style.display = 'none';
+    login_cadastro.style.display ='block';
+  }
+
+  function fechar_cadastro(){
+    cadastro_block.style.display = 'none';
+    login_cadastro.style.display ='block';
+  }
+
+  function cadastro_login(){
+    cadastro_block.style.display = 'none';
     login_cadastro.style.display ='block';
   }
 
