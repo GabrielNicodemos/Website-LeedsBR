@@ -1,0 +1,239 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F0F8FF;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Menu */
+
+.menu-bg {
+    background: #062f4f;
+}
+
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu-logo {
+    width: 110px;
+    margin: 0 20px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.menu-nav a {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    font-weight: bold;
+}
+
+.menu-login ul {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-login a {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    display: block;
+    padding: 10px;
+}
+
+.menu-login a:hover {
+    font-weight: bold;
+}
+
+@media (max-widht: 800px) {
+    .menu {
+        margin-left: 0 auto;
+    }
+}
+
+
+/* Fim Menu */
+
+
+/* Intro */
+
+.img-intro {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 8px solid #CAAC00;
+    background: url(../img/time.jpg) no-repeat scroll;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    border-bottom: 4px solid #2E4386;
+}
+
+.title-historia {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 40px auto;
+    font-size: 32px;
+}
+
+.img-intro h1 {
+    text-align: center;
+    margin: 60px auto;
+    color: #2E4386;
+    background-color: white;
+    opacity: 90%;
+    padding: 0 20px;
+    border-bottom: 2px solid #2E4386;
+}
+
+
+/* Intro Fim intro*/
+
+
+/* Corpo Noticia */
+
+.corpo {
+    border-bottom: 2px solid #2c70ff;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.corpo-estadio {
+    border-top: 2px solid #2c70ff;
+    border-bottom: none;
+}
+
+.txt1 {
+    flex: 3 1 300px;
+    margin: 0 10px;
+}
+
+.txt1 h2 {
+    font-size: 3em;
+    margin-bottom: 25px;
+    color: #2E4386;
+    text-transform: uppercase;
+}
+
+.txt1 p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #2E4386;
+}
+
+.img-txt1 {
+    flex: 1 1 300px;
+    margin: 80px 10px 40px 10px;
+}
+
+.img-txt1 img {
+    border-radius: 10%;
+    border-bottom: 4px solid #2E4386;
+}
+
+
+/* FIM text */
+
+
+/* Valores */
+
+.valores {
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+.valores h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #2E4386;
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.valores-div {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.valores-div img {
+    border-radius: 10%;
+    border-bottom: 4px solid #2E4386;
+    margin: 0 auto;
+}
+
+.valores-div h2 {
+    font-size: 3em;
+    color: #a4a4a4;
+    background: #f7f7f7;
+    padding: 60px 20px;
+}
+
+.um {
+    border-top: 8px solid #ae81ff;
+}
+
+.dois {
+    border-top: 8px solid #f9265e;
+}
+
+.tres {
+    border-top: 8px solid #66d9eb;
+}
+
+
+/* FIM Valores */
