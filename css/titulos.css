@@ -118,7 +118,7 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     border-top: 8px solid #CAAC00;
-    background: url(../img/history.jpg) no-repeat scroll;
+    background: url(../img/leedsCampeap.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -126,7 +126,7 @@ figcaption {
     border-bottom: 4px solid #2E4386;
 }
 
-.title-historia {
+.title-titulos {
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;
@@ -148,107 +148,48 @@ figcaption {
 
 /* Intro Fim intro*/
 
-
-/* Corpo Noticia */
-
-.corpo {
-    border-bottom: 2px solid #2c70ff;
+.titulo1 {
+    border-bottom: 2px solid #2E4386;
     max-width: 1100px;
     margin: 0 auto;
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.corpo-estadio {
-    border-top: 2px solid #2c70ff;
+.titulo2 {
     border-bottom: none;
 }
 
-.txt1 {
-    flex: 3 1 300px;
-    margin: 0 10px;
-}
-
-.txt1 h2 {
-    font-size: 3em;
+.titulo1 h1 {
+    font-size: 2em;
     margin-bottom: 25px;
     color: #2E4386;
     text-transform: uppercase;
-}
-
-.txt1 p {
-    font-size: 1.25em;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    color: #2E4386;
-}
-
-.img-txt1 {
-    flex: 1 1 300px;
-    margin: 80px 10px 40px 10px;
-}
-
-.img-txt1 img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
-}
-
-
-/* FIM text */
-
-
-/* Valores */
-
-.valores {
-    max-width: 960px;
-    margin: 30px auto;
-}
-
-.valores h1 {
-    font-size: 3em;
     text-align: center;
-    color: #2E4386;
 }
 
-.valores-container {
+.tacas {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: space-between;
 }
 
-.valores-div {
-    flex: 1 1 175px;
-    margin: 10px;
-}
-
-.valores-div img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
+.taca-one {
     margin: 0 auto;
 }
 
-.valores-div h2 {
-    font-size: 3em;
-    color: #a4a4a4;
-    background: #f7f7f7;
-    padding: 60px 20px;
+.taca-two {
+    justify-content: space-around;
 }
 
-.um {
-    border-top: 8px solid#062f4f;
+.tacas img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    border-bottom: 4px solid #2E4386;
 }
-
-.dois {
-    border-top: 8px solid #CAAC00;
-}
-
-.tres {
-    border-top: 8px solid #2E4386;
-}
-
-
-/* FIM Valores */
 
 
 /* Footer */

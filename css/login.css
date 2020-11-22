@@ -12,7 +12,8 @@ a {
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #F0F8FF;
+    background: url(../img/introLeeds.jpg) no-repeat;
+    background-size: cover;
 }
 
 ul {
@@ -44,6 +45,7 @@ figcaption {
 
 .menu-bg {
     background: #2E4386;
+    border-bottom: 8px solid #CAAC00;
 }
 
 .menu {
@@ -112,143 +114,72 @@ figcaption {
 /* Fim Menu */
 
 
-/* Intro */
+/* Tela Login */
 
-.img-intro {
+.login {
+    width: 400px;
+    height: 400px;
+    background-color: #ffffffbd;
+    margin: 50px auto 80px auto;
+    border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
-    border-top: 8px solid #CAAC00;
-    background: url(../img/history.jpg) no-repeat scroll;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    width: 100%;
-    border-bottom: 4px solid #2E4386;
+    flex-direction: column;
 }
 
-.title-historia {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 40px auto;
-    font-size: 32px;
-}
-
-.img-intro h1 {
-    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+.login h3 {
     text-align: center;
-    margin: 60px auto;
-    color: #2E4386;
-    background-color: white;
-    opacity: 90%;
-    padding: 0 20px;
-    border-bottom: 2px solid #2E4386;
-}
-
-
-/* Intro Fim intro*/
-
-
-/* Corpo Noticia */
-
-.corpo {
-    border-bottom: 2px solid #2c70ff;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.corpo-estadio {
-    border-top: 2px solid #2c70ff;
-    border-bottom: none;
-}
-
-.txt1 {
-    flex: 3 1 300px;
-    margin: 0 10px;
-}
-
-.txt1 h2 {
-    font-size: 3em;
+    padding-top: 0px;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 2em;
     margin-bottom: 25px;
     color: #2E4386;
     text-transform: uppercase;
 }
 
-.txt1 p {
-    font-size: 1.25em;
-    line-height: 1.4;
-    margin-bottom: 15px;
-    color: #2E4386;
-}
-
-.img-txt1 {
-    flex: 1 1 300px;
-    margin: 80px 10px 40px 10px;
-}
-
-.img-txt1 img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
-}
-
-
-/* FIM text */
-
-
-/* Valores */
-
-.valores {
-    max-width: 960px;
-    margin: 30px auto;
-}
-
-.valores h1 {
-    font-size: 3em;
+.login p {
     text-align: center;
+    padding-top: 0px;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
     color: #2E4386;
+    text-transform: uppercase;
 }
 
-.valores-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.valores-div {
-    flex: 1 1 175px;
-    margin: 10px;
-}
-
-.valores-div img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
+.login input {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    width: 300px;
     margin: 0 auto;
+    background: none;
+    border: 1px solid #2E4386;
+    color: #2E4386;
+    outline: none;
+    text-align: center;
 }
 
-.valores-div h2 {
-    font-size: 3em;
-    color: #a4a4a4;
-    background: #f7f7f7;
-    padding: 60px 20px;
+.login button {
+    width: 120px;
+    height: 30px;
+    margin: 20px auto;
+    background: none;
+    border: 1px solid #2E4386;
+    color: #2E4386;
+    border-radius: 30px;
+    outline: none;
 }
 
-.um {
-    border-top: 8px solid#062f4f;
+.login button:hover {
+    background: #2E4386;
+    color: white;
+    cursor: pointer;
 }
 
-.dois {
-    border-top: 8px solid #CAAC00;
+.login a {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    color: red;
 }
-
-.tres {
-    border-top: 8px solid #2E4386;
-}
-
-
-/* FIM Valores */
 
 
 /* Footer */

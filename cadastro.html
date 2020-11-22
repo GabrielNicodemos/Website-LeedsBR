@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <meta name=" viewport " content="width=device-width, initial-scale=1.0 ">
+    <link rel="shortcut icon" href="./img/leedsLogo.png">
+    <title>Cadastro - Leeds BR</title>
+</head>
+
+<body>
+    <!-- Começo Menu -->
+    <header>
+        <div class="menu-bg">
+            <div class="menu ">
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img src="./img/logoLetraBranca.png" alt="">
+                    </a>
+
+                </div>
+                <nav class="menu-nav ">
+                    <ul>
+                        <li>
+                            <a href="index.html ">Home</a>
+                        </li>
+                        <li>
+                            <a href="historia.html ">História</a>
+                        </li>
+                        <li>
+                            <a href="titulos.html ">Títulos</a>
+                        </li>
+
+                        <li>
+                            <a href="noticia.html">Notícias</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="menu-login">
+                    <ul>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                        <li>
+                            <a class="current ">Cadastro</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FIM menu -->
+
+    <section class="cadastro">
+        <p>Cadastra-se e receba notícias em seu email</p>
+        <h3>Cadastro</h3>
+        <p>Digite seu email</p><input type="email" placeholder="Digite seu email" id="email">
+        <p>Confirme seu email</p><input type="email" placeholder="Confirme seu email" id="emailConfirm">
+        <p>Digite sua senha</p><input type="password" placeholder="Digite sua senha" id="pass">
+        <p>Confirme sua senha</p> <input type="password" placeholder="Confirme sua senha" id="passConfirm">
+        <p>Data de nascimento</p> <input type="date" placeholder="Confirme sua senha">
+        <button onclick="verificaCadastro()">entrar</button>
+        <strong><p id="mensagemCadastro"></p></strong>
+    </section>
+    <!-- Começo Footer -->
+    <footer class="footer">
+        <div class="txt-footer">
+            <div class="contato">
+                <ul>
+                    <li>+55 (11)4444-5555</li>
+                    <li>+55 (11)5555-4444</li>
+                    <li>contato@leedsbr.com</li>
+                </ul>
+            </div>
+
+            <div class="endereco">
+                <ul>
+                    <li>Av. Paulista - N°112</li>
+                    <li>Bela Cintra - São Paulo/SP</li>
+                    <li>CEP: 080999-212</li>
+                </ul>
+            </div>
+
+            <div class="sociais">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" class="img-social"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="./img/twitter.png" class="img-social"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" class="img-social"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    function verificaCadastro() {
+        var e = email.value;
+        var e2 = emailConfirm.value;
+        var p = pass.value;
+        var p2 = passConfirm.value;
+
+        if (e == '' || p == '') {
+            mensagemCadastro.innerHTML = "Campos em branco<br>Digite um email e senha";
+            mensagemCadastro.style.color = 'red';
+            mensagemCadastro.style.textAlign = 'center';
+            mensagemCadastro.style.fontSize = '14px';
+        } else if (e == e2 && p == p2) {
+            mensagemCadastro.innerHTML = "Cadastrado com sucesso";
+            mensagemCadastro.style.color = 'green';
+            mensagemCadastro.style.textAlign = 'center';
+            mensagemCadastro.style.fontSize = '14px';
+
+        } else if (e != e2) {
+            mensagemCadastro.innerHTML = "Email não coincidem";
+            mensagemCadastro.style.color = 'red';
+            mensagemCadastro.style.textAlign = 'center';
+            mensagemCadastro.style.fontSize = '14px';
+        } else if (p != p2) {
+            mensagemCadastro.innerHTML = "Senhas não coincidem";
+            mensagemCadastro.style.color = 'red';
+            mensagemCadastro.style.textAlign = 'center';
+            mensagemCadastro.style.fontSize = '14px';
+        }
+    }
+</script>

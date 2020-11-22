@@ -118,7 +118,7 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     border-top: 8px solid #CAAC00;
-    background: url(../img/history.jpg) no-repeat scroll;
+    background: url(../img/intro.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -126,7 +126,7 @@ figcaption {
     border-bottom: 4px solid #2E4386;
 }
 
-.title-historia {
+.title-not {
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;
@@ -149,106 +149,43 @@ figcaption {
 /* Intro Fim intro*/
 
 
-/* Corpo Noticia */
+/* Section Noticias */
 
-.corpo {
-    border-bottom: 2px solid #2c70ff;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 0;
+.noticia {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 50px auto;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 4px solid #2E4386;
+    padding-bottom: 50px;
 }
 
-.corpo-estadio {
-    border-top: 2px solid #2c70ff;
-    border-bottom: none;
-}
-
-.txt1 {
-    flex: 3 1 300px;
-    margin: 0 10px;
-}
-
-.txt1 h2 {
-    font-size: 3em;
+.noticia h1 {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 2em;
     margin-bottom: 25px;
     color: #2E4386;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.txt1 p {
+.noticia p {
     font-size: 1.25em;
     line-height: 1.4;
     margin-bottom: 15px;
     color: #2E4386;
+    text-align: justify;
 }
 
-.img-txt1 {
-    flex: 1 1 300px;
-    margin: 80px 10px 40px 10px;
-}
-
-.img-txt1 img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
-}
-
-
-/* FIM text */
-
-
-/* Valores */
-
-.valores {
-    max-width: 960px;
-    margin: 30px auto;
-}
-
-.valores h1 {
-    font-size: 3em;
-    text-align: center;
-    color: #2E4386;
-}
-
-.valores-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-
-.valores-div {
-    flex: 1 1 175px;
-    margin: 10px;
-}
-
-.valores-div img {
-    border-radius: 10%;
-    border-bottom: 4px solid #2E4386;
+.noticia img {
+    width: 400px;
+    height: 250px;
     margin: 0 auto;
+    border-radius: 10%;
+    border-bottom: 4px solid #2E4386;
 }
-
-.valores-div h2 {
-    font-size: 3em;
-    color: #a4a4a4;
-    background: #f7f7f7;
-    padding: 60px 20px;
-}
-
-.um {
-    border-top: 8px solid#062f4f;
-}
-
-.dois {
-    border-top: 8px solid #CAAC00;
-}
-
-.tres {
-    border-top: 8px solid #2E4386;
-}
-
-
-/* FIM Valores */
 
 
 /* Footer */

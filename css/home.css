@@ -1,9 +1,12 @@
-/* ESTILO GERAIS */
-
-::-webkit-input-placeholder {
-    color: white;
-    text-align: center;
-    opacity: 70%;
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -12,530 +15,394 @@ body {
     background-color: #F0F8FF;
 }
 
+ul {
+    list-style: none;
+}
+
 a {
     text-decoration: none;
-    color: white;
 }
 
-.container {
-    height: 100px;
-    width: 80%;
-    margin: auto;
+img {
+    display: block;
+    max-width: 100%;
 }
 
-
-/* FIM ESTILOS GERAIS */
-
-
-/* Intro e menu */
-
-.intro {
-    top: 0;
-    width: 100%;
-    height: 98%;
-    position: absolute;
+* {
+    box-sizing: border-box;
 }
 
-.intro img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.img-intro {
-    border-top: 8px solid #2E4386;
-    border-bottom: 8px solid #CAAC00;
-}
-
-.login {
-    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    color: #2E4386;
     font-size: 14px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 6%;
-    margin-top: -35px;
-    background-color: #2E4386;
-    width: 200px;
-    height: 40px;
-    color: #FFF;
-    border-radius: 0 0 30px 30px;
 }
 
-#login_block {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 300px;
-    background-color: #2E4386;
-    z-index: 0;
-    border-radius: 20px;
-    display: none;
-}
 
-#cadastro_block p {
-    color: white;
-    text-align: center;
-    margin-top: 40px;
-}
+/* Menu */
 
-#cadastro_block h3 {
-    color: white;
-    text-align: center;
-    margin-left: 30px;
-}
-
-#cadastro_block input {
-    position: absolute;
-    background: none;
-    left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    border: 1px solid white;
-    text-align: center;
-    color: white;
-    margin-top: -15px;
-    width: 200px;
-    padding: 5px;
-}
-
-#cadastro_block button {
-    position: relative;
-    background: none;
-    left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    border: 1px solid white;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    display: block;
-    width: 120px;
-    top: 5%;
-}
-
-#cadastro_block button:hover {
-    background-color: white;
-    color: #2E4386;
-    cursor: pointer;
-}
-
-#cadastro_block {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    height: 500px;
-    background-color: #2E4386;
-    z-index: 0;
-    border-radius: 20px;
-    display: none;
-}
-
-#login_block p {
-    color: white;
-    text-align: center;
-}
-
-#login_block h3 {
-    color: white;
-    text-align: center;
-    margin-left: 30px;
-}
-
-#login_block input {
-    position: absolute;
-    background: none;
-    left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    border: 1px solid white;
-    text-align: center;
-    color: white;
-    margin-top: -20px;
-}
-
-#login_block button {
-    position: relative;
-    background: none;
-    left: 50%;
-    transform: translateX(-50%);
-    outline: none;
-    border: 1px solid white;
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    display: block;
-    width: 120px;
-    top: -5%;
-}
-
-#login_block button:hover {
-    background-color: white;
-    color: #2E4386;
-    cursor: pointer;
-}
-
-.btnSair {
-    width: 15px;
-    height: 15px;
-    float: right;
-    margin-top: 22px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.login ul {
-    text-align: justify;
-    margin-top: 11px;
-    margin-left: -8px;
-    text-transform: uppercase;
-}
-
-.login ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.login ul li:hover {
-    cursor: pointer;
+.current {
     font-weight: bold;
+}
+
+.menu-bg {
+    background: #2E4386;
 }
 
 .menu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 93%;
-    background-color: #2E4386;
-    width: 400px;
-    height: 40px;
-    color: #FFF;
-    border-radius: 20px;
-    opacity: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.menu ul {
-    text-align: justify;
-    margin-top: 8px;
-    margin-left: 5px;
+.menu a {
+    color: white;
 }
 
-.menu ul li {
+.menu-logo {
+    width: 110px;
+    margin: 0 20px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.menu-nav a {
     font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
-    display: inline;
-    margin-right: 15px;
+    font-size: 20px;
+    padding: 10px;
 }
 
-.menu ul li:hover {
-    cursor: pointer;
-    text-decoration: none;
+.menu-nav a:hover {
     font-weight: bold;
 }
 
-.logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 65%;
-    margin-top: -35px;
-    width: 250px;
-    height: 200px;
-    color: #FFF;
-    border-radius: 20px;
-    opacity: 90%;
+.menu-login ul {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-login a {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+}
+
+.menu-login a:hover {
+    font-weight: bold;
+}
+
+@media (max-widht: 800px) {
+    .menu {
+        margin-left: 0 auto;
+    }
 }
 
 
-/* FIM Intro e menu */
+/* Fim Menu */
 
 
-/* Section Noticia */
+/* Intro */
+
+.img-intro {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 8px solid #CAAC00;
+    background: url(../img/introLeeds.jpg) no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid #2E4386;
+}
+
+.title-home {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-size: 32px;
+}
+
+.img-intro h1 {
+    text-align: center;
+    margin: 180px auto;
+    color: #2E4386;
+    background-color: white;
+    opacity: 80%;
+    padding: 0 20px;
+    border-bottom: 2px solid #2E4386;
+    height: 70px;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+}
+
+
+/* FIM Intro */
+
+.tag {
+    display: flex;
+    height: 30px;
+    width: 180px;
+    background-color: #2E4386;
+    margin: 40px auto 0 auto;
+    border-radius: 0 20px 0 10px;
+}
+
+.tag p {
+    color: white;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    margin: 4px auto;
+    text-transform: uppercase;
+}
+
+
+/* Noticias */
 
 .noticias {
     width: 100%;
-    height: 380px;
-    background-color: #ccc;
-    position: absolute;
-    top: 110%;
-    border-top: 8px solid #212f5f;
+    background-color: #f7f7f7;
+    display: flex;
+    border-top: 6px solid #2E4386;
+    justify-content: space-between;
+    height: 350px;
 }
 
-.tag {
-    position: absolute;
-    top: -9%;
-    background-color: #212f5f;
-    border-radius: 30px 0;
-    color: white;
-    width: 180px;
-    height: 30px;
-    text-align: center;
-    line-height: 10%;
-    font-size: 16px;
-    left: 50%;
-    transform: translateX(-50%);
+.noticia1 {
+    height: 350px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
 }
 
-.tag2 {
-    top: -7%;
-    left: 100%;
-    transform: translateX(-50%);
-    background-color: #212f5f;
-}
-
-.img-not {
-    position: absolute;
-    top: 0;
+.noticia1 img {
     height: 250px;
-    width: 33%;
+    border-bottom: 4px solid #2E4386;
 }
 
-.not {
-    position: absolute;
-    width: 33%;
-    height: 132px;
-    background-color: #2E4386;
-    top: 65%;
-    color: white;
-    font-size: 18px;
+.noticia1 h3 {
     text-align: center;
+    color: #2E4386;
+    margin: 10px auto;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
 .botao {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
     background: none;
-    color: white;
-    border-radius: 10px;
-    width: 100px;
-    height: 20px;
-    border: 1px solid white;
-    outline: none;
+    height: 70px;
+    width: 150px;
+    color: #2E4386;
+    border: 1px solid #2E4386;
+    border-radius: 30px;
+    margin-left: 140px;
 }
 
 .botao:hover {
     cursor: pointer;
-    background-color: white;
+    background: #2E4386;
+    color: white;
+}
+
+.noticia2 {
+    height: 350px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.noticia2 h3 {
+    text-align: center;
     color: #2E4386;
+    margin: 10px auto;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
-.not2 {
-    position: absolute;
-    width: 33%;
-    height: 132px;
-    background-color: #2E4386;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 18px;
-    text-align: center;
-}
-
-.img-not2 {
-    position: absolute;
-    top: 0;
+.noticia2 img {
     height: 250px;
-    width: 33%;
-    left: 50%;
-    transform: translateX(-50%);
+    border-bottom: 4px solid #2E4386;
 }
 
-.not3 {
-    position: absolute;
-    width: 33%;
-    height: 132px;
-    background-color: #2E4386;
-    top: 65%;
-    right: 0;
-    color: white;
-    font-size: 18px;
-    text-align: center;
+.noticia3 {
+    height: 350px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
-.img-not3 {
-    position: absolute;
-    top: 0;
-    right: 0;
+.noticia3 img {
     height: 250px;
-    width: 33%;
+    border-bottom: 4px solid #2E4386;
+}
+
+.noticia3 h3 {
+    text-align: center;
+    color: #2E4386;
+    margin: 10px auto;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
 
-/* FIM NOTICIA */
+/* FIM noticias */
 
 
-/* Jogos */
+/* Section Jogos */
 
 .jogos {
-    position: absolute;
     width: 100%;
-    height: 380px;
-    top: 190%;
-    border-top: 8px solid #212f5f;
+    height: 350px;
+    background: url(../img/estadio.jpg) no-repeat;
+    border-top: 6px solid #2E4386;
 }
 
-.img-jg {
-    position: absolute;
+.jogos img {
     width: 100%;
-    height: 380px;
-    opacity: 40%;
+    height: 350px;
 }
 
 
-/* Fim jogos */
+/* Fim Section jogos */
 
 
 /* Formulario */
 
 .form {
-    position: absolute;
-    float: left;
-    width: 50%;
-    height: 490px;
-    top: 270%;
+    width: 100%;
+    height: 500px;
     background-color: #f7f7f7;
-    border-top: 8px solid #212f5f;
+    border-top: 6px solid #2E4386;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
-.txt {
-    color: #212f5f;
+.formulario {
+    margin: 40px 40px 40px 140px;
+    flex: 1 1 200px;
+}
+
+.formulario h2 {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    color: #062f4f;
+}
+
+.formulario p {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    color: #062f4f;
+    margin-top: 10px;
+}
+
+.formulario input {
+    width: 300px;
+    height: 30px;
+    background: none;
+    color: #062f4f;
     text-align: center;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    border: 1px solid #2E4386;
+    padding: 10px;
+}
+
+.formulario textarea {
+    width: 300px;
+    height: 80px;
+    background: none;
+    color: #062f4f;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    border: 1px solid #2E4386;
+    padding: 10px;
+}
+
+.formulario button {
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    background: none;
+    height: 30px;
+    width: 150px;
+    color: #2E4386;
+    border: 1px solid #2E4386;
+    border-radius: 30px;
+    margin-left: 80px;
+    outline: none;
+}
+
+.formulario button:hover {
+    color: white;
+    background: #2E4386;
+    cursor: pointer;
 }
 
 .text-form {
-    position: absolute;
-    width: 100%;
-    background-color: #f7f7f7;
-    height: 489px;
-    top: -1.5%;
-    float: right;
-    left: 100%;
-    border-top: 8px solid #212f5f;
+    flex: 2 1 200px;
+    margin: 90px 140px 40px 40px;
 }
 
 .text-form h2 {
-    color: #212f5f;
-    ;
-    margin-right: 50px;
-    text-align: center;
-    margin-top: 120px;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    color: #062f4f;
 }
 
 .text-form p {
-    color: #212f5f;
-    line-height: 20px;
-    text-align: justify;
-    margin-right: 50px;
-}
-
-.input-form {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    background: none;
-    color: #212f5f;
-    outline: none;
-    border: 1px solid #212f5f;
-    height: 25px;
-    margin-top: -20px;
-    width: 300px;
-    text-align: center;
-}
-
-textarea {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    background: none;
-    color: #2E4386;
-    outline: none;
-    border: 1px solid #212f5f;
-    margin-bottom: 15px;
-    height: 40px;
-    width: 300px;
-}
-
-.btn-form {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
-    background: none;
-    border: 1px solid #212f5f;
-    color: #212f5f;
-    width: 150px;
-    height: 25px;
-    margin-top: 40px;
-    outline: none;
-}
-
-.btn-form:hover {
-    color: white;
-    background-color: #2E4386;
-    border: none;
-    cursor: pointer;
+    font-family: 'Roboto Mono', monospace, Arial, Helvetica, sans-serif;
+    color: #062f4f;
+    margin-top: 10px;
+    line-height: 25px;
 }
 
 
-/* FOOTER */
+/* Fim Formulario */
+
+
+/* Footer */
+
+
+/* Footer */
 
 .footer {
-    width: 100%;
-    position: absolute;
-    background-color: #212f5f;
-    top: 360%;
-    height: 120px;
+    background: #062f4f;
 }
 
-.footer ul {
-    float: left;
-    list-style: none;
-    color: white;
+.txt-footer {
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .contato {
-    line-height: 20px;
-    float: left;
-}
-
-.sociais {
-    line-height: 20px;
-    float: right;
-}
-
-.sociais ul li {
-    float: left;
-}
-
-.img-social {
-    height: 35px;
-    width: 35px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.img-social:hover {
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-    border-bottom: 1px solid #fff;
+    margin: 20px 30px 20px 30px;
+    color: white;
+    line-height: 25px;
 }
 
 .endereco {
-    line-height: 20px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 20px 30px 20px 30px;
+    color: white;
+    line-height: 25px;
 }
 
-.copy {
-    width: 100%;
-    position: absolute;
-    background-color: #212f5f;
-    top: 375%;
-    height: 50px;
-    border-top: 2px solid white;
-    text-align: center;
-    color: #A9A9A9;
+.sociais ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px 20px 30px;
+}
+
+.sociais ul li {
+    padding: 10px;
+}
+
+.sociais img {
+    width: 35px;
+    height: 35px;
+}
+
+.sociais ul li:hover {
+    border: 1px solid white;
 }
