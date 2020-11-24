@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <meta name=" viewport " content="width=device-width, initial-scale=1.0 ">
+    <link rel="shortcut icon" href="./img/leedsLogo.png">
+    <title>Login - Leeds BR</title>
+</head>
+
+<body>
+
+    <!-- Começo Menu -->
+    <header>
+        <div class="menu-bg">
+            <div class="menu ">
+                <div class="menu-logo">
+                    <a href="index.html">
+                        <img src="./img/logoLetraBranca.png" alt="">
+                    </a>
+
+                </div>
+                <nav class="menu-nav ">
+                    <ul>
+                        <li>
+                            <a href="index.html ">Home</a>
+                        </li>
+                        <li>
+                            <a href="historia.html ">História</a>
+                        </li>
+                        <li>
+                            <a href="titulos.html ">Títulos</a>
+                        </li>
+
+                        <li>
+                            <a href="noticia.html">Notícias</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="menu-login">
+                    <ul>
+                        <li>
+                            <a class="current">Login</a>
+                        </li>
+                        <li>
+                            <a href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FIM menu -->
+
+    <section class="login">
+        <h3>Login</h3>
+        <form class="formulario" id="form_login" method="post" onsubmit="return entrar()">
+            <p>Usuário</p>
+            <input type="text" class="input-padrao" name="login">
+            <p>Senha</p>
+            <input type="password" class="input-padrao" name="senha">
+            <button id="btn_entrar">entrar</button>
+        </form>
+
+        <img src="img/carregando.gif" id="img_aguarde" style="display: none; margin: 0  auto;" width="50px">
+        <a href=""><u>Esqueceu senha</u></a><br><br>
+        <strong><p id="mensagemLogin"></p></strong>
+    </section>
+
+    <!-- Começo Footer -->
+    <footer class="footer">
+        <div class="txt-footer">
+            <div class="contato">
+                <ul>
+                    <li>+55 (11)4444-5555</li>
+                    <li>+55 (11)5555-4444</li>
+                    <li>contato@leedsbr.com</li>
+                </ul>
+            </div>
+
+            <div class="endereco">
+                <ul>
+                    <li>Av. Paulista - N°112</li>
+                    <li>Bela Cintra - São Paulo/SP</li>
+                    <li>CEP: 080999-212</li>
+                </ul>
+            </div>
+
+            <div class="sociais">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" class="img-social"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" target="_blank"><img src="./img/twitter.png" class="img-social"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" class="img-social"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script>
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'noticia.html';
+                });
+
+            } else {
+                console.log('Erro de login!');
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        // div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        // div_erro.style.visibility = 'visible';
+        // div_erro.innerHTML = resposta;
+    }
+</script>
