@@ -99,37 +99,38 @@
     </div>
     <!-- section jogos -->
     <section class="jogos">
-        <img src="./img/estadio.jpg" class="img-jg">
-
-        <!-- FIM section jogos -->
-
-        <!-- section formulario -->
+        <img src="./img/jogo1.fw.png" alt="">
+        <img src="./img/jogo2.fw.png" alt="">
+        <img src="./img/jogo3.fw.png" alt="">
     </section>
-    <div class="tag tag2">
+
+    <!-- FIM section jogos -->
+
+    <!-- section formulario -->
+
+    <div class="tag tag2 ">
         <p>Formulário</p>
     </div>
-    <section class="form">
-        <div class="formulario">
+    <section class="form ">
+        <div class="formulario ">
             <h2>Sugestões e Parcerias<br>Deixe sua mensagem</h2>
             <p>Nome completo </p><br>
-            <input class="input-form" type="text" placeholder="Digite seu nome completo"><br>
+            <input class="input-form " type="text " placeholder="Digite seu nome completo "><br>
 
             <p>Email </p><br>
-            <input class="input-form" type="email" placeholder="Digite seu email"><br>
+            <input class="input-form " type="email " placeholder="Digite seu email "><br>
 
             <p>Assunto </p><br>
-            <input class="input-form" type="text" placeholder="Digite o assunto da mensagem"><br>
+            <input class="input-form " type="text " placeholder="Digite o assunto da mensagem "><br>
 
             <p>Mensagem </p>
-            <textarea type="text" placeholder="Digite sua mensagem"></textarea><br>
+            <textarea type="text " placeholder="Digite sua mensagem "></textarea><br>
 
-            <button class="btn-form">Enviar mensagem</button>
+            <button class="btn-form " onclick="enviarEmail()">Enviar mensagem</button>
         </div>
 
-        <div class="text-form">
-            <h2>Lorem ipsum, dolor sit amet consectetur adipisicin</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nostrum cumque officia sint autem voluptatem blanditiis reprehenderit itaque hic voluptas. Dolorem assumenda error unde commodi doloribus asperiores repellendus numquam ex.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nostrum cumque officia sint autem voluptatem blanditiis reprehenderit itaque hic voluptas.
+        <div class="text-form ">
+            <p>Este site não tem nenhuma relação com o Leeds United. O Leeds BR é um site criado de torcedor para torcedor. Parte do conteúdo, incluindo o Símbolo do BVB é de direito do clube.
             </p>
         </div>
     </section>
@@ -137,9 +138,9 @@
 
 
     <!-- Começo Footer -->
-    <footer class="footer">
-        <div class="txt-footer">
-            <div class="contato">
+    <footer class="footer ">
+        <div class="txt-footer ">
+            <div class="contato ">
                 <ul>
                     <li>+55 (11)4444-5555</li>
                     <li>+55 (11)5555-4444</li>
@@ -147,7 +148,7 @@
                 </ul>
             </div>
 
-            <div class="endereco">
+            <div class="endereco ">
                 <ul>
                     <li>Av. Paulista - N°112</li>
                     <li>Bela Cintra - São Paulo/SP</li>
@@ -155,21 +156,25 @@
                 </ul>
             </div>
 
-            <div class="sociais">
+            <div class="sociais ">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" class="img-social"></a>
+                        <a href="https://www.facebook.com/ " target="_blank "><img src="./img/facebook.png " class="img-social "></a>
                     </li>
                     <li>
-                        <a href="https://www.twitter.com/" target="_blank"><img src="./img/twitter.png" class="img-social"></a>
+                        <a href="https://www.twitter.com/ " target="_blank "><img src="./img/twitter.png " class="img-social "></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" class="img-social"></a>
+                        <a href="https://www.instagram.com/ " target="_blank "><img src="./img/instagram.png " class="img-social "></a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+
+    <div class="copy">
+        <p>Projeto desenvolvido por <b>Gabriel Eduardo C. Nicodemos</b> - Student BandTec</p>
+    </div>
 
 
 
@@ -178,17 +183,7 @@
 </html>
 
 <script>
-    function verificaLogin() {
-        var e = emailUser.value;
-        var ps = pass.value;
-        if (e == 'Gabriel' && ps == '1234') {
-            mensagemLogin.innerHTML = "Logado com sucesso!";
-            mensagemLogin.style.color = 'white';
-            mensagemLogin.style.textAlign = 'center';
-        } else {
-            mensagemLogin.innerHTML = "Email ou senha incorreto";
-            mensagemLogin.style.color = 'white';
-            mensagemLogin.style.textAlign = 'center';
-        }
+    function enviarEmail() {
+        alert("Mensagem eviada ao email!")
     }
 </script>

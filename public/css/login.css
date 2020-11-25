@@ -118,7 +118,7 @@ figcaption {
 
 .login {
     width: 400px;
-    height: 400px;
+    height: 350px;
     background-color: #ffffffbd;
     margin: 50px auto 80px auto;
     border-radius: 30px;
@@ -192,6 +192,7 @@ figcaption {
 
 .footer {
     background: #062f4f;
+    border-top: 4px solid white;
 }
 
 .txt-footer {
@@ -231,4 +232,16 @@ figcaption {
 
 .sociais ul li:hover {
     border: 1px solid white;
+}
+
+.copy {
+    background: #062f4f;
+    border-top: 4px solid white;
+    height: 30px;
+}
+
+.copy p {
+    color: #ccc;
+    text-align: center;
+    margin-top: 5px;
 }

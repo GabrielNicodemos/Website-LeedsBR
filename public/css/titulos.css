@@ -236,3 +236,15 @@ figcaption {
 .sociais ul li:hover {
     border: 1px solid white;
 }
+
+.copy {
+    background: #062f4f;
+    border-top: 4px solid white;
+    height: 30px;
+}
+
+.copy p {
+    color: #ccc;
+    text-align: center;
+    margin-top: 5px;
+}

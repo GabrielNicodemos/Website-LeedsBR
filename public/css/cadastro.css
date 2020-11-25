@@ -115,7 +115,7 @@ figcaption {
 
 .cadastro {
     width: 400px;
-    height: 470px;
+    height: 400px;
     background-color: #ffffffbd;
     margin: 50px auto 30px auto;
     border-radius: 30px;
@@ -152,6 +152,7 @@ p {
     font-size: 1.0em;
     color: #2E4386;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .cadastro input {
@@ -228,4 +229,16 @@ p {
 
 .sociais ul li:hover {
     border: 1px solid white;
+}
+
+.copy {
+    background: #062f4f;
+    border-top: 4px solid white;
+    height: 30px;
+}
+
+.txtcopy {
+    color: #ccc;
+    text-align: center;
+    margin-top: 5px;
 }
