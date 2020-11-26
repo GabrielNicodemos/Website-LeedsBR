@@ -55,9 +55,9 @@
         </div>
     </header>
     <!-- FIM Menu -->
-    <section class="img-intro">
+    <section class="img-intro" id="dvslider">
         <div class="title-home">
-            <h1> Leeds United Fotball Club</h1>
+            <h1> Leeds United Football Club</h1>
         </div>
     </section>
 
@@ -71,7 +71,7 @@
     <section class="noticias">
 
         <div class="noticia1">
-            <img src="./img/bielsa.jpg" class="img-not">
+            <img src="./img/b1.jpg" class="img-not">
             <h3>Marcelo Bielsa<br> conquita mais um recorde</h3>
             <button class="botao"><a href="noticia.html">Saiba Mais</a></button>
         </div>
@@ -183,7 +183,46 @@
 </html>
 
 <script>
+    var imgs = [];
+    var slider;
+    var imgAtual;
+    var imgMax;
+    var tmp;
+
     function enviarEmail() {
         alert("Mensagem eviada ao email!")
     }
+
+    function preCarregamento() {
+        var s = 1;
+        for (var i = 0; i < 3; i++) {
+            imgs[i] = new Image();
+            imgs[i].src = "./img/z" + s + ".jpg";
+            s++;
+        }
+    }
+
+    function carregarImg(img) {
+        slider.style.backgroundImage = "url( ' " + imgs[img].src + " ' )"
+
+    }
+
+    function iniciar() {
+        preCarregamento();
+        imgAtual = 0;
+        imgMax = imgs.length - 1;
+        slider = document.getElementById("dvslider");
+        carregarImg(imgAtual);
+        tmp = setInterval(troca, 3000);
+    }
+
+    function troca() {
+        imgAtual++;
+        if (imgAtual > imgMax) {
+            imgAtual = 0;
+        }
+        carregarImg(imgAtual);
+    }
+
+    window.addEventListener("load", iniciar);
 </script>

@@ -118,7 +118,6 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     border-top: 8px solid #CAAC00;
-    background: url(../img/introLeeds.jpg) no-repeat;
     background-size: cover;
     border-bottom: 4px solid #2E4386;
 }
